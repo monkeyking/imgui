@@ -669,7 +669,7 @@ namespace ImGui
     //      TableNextColumn() will automatically wrap-around into the next row if needed.
     //    - IMPORTANT: Comparatively to the old Columns() API, we need to call TableNextColumn() for the first column!
     //    - Both TableSetColumnIndex() and TableNextColumn() return false when the column is not visible, so you can
-    //      skip submitting the contents of a cell BUT ONLY if you know the contents is not going to alter row height.
+    //      skip submitting the contents of a cell BUT ONLY if you know it is not going to contribute to row height.
     //      In many situations, you may skip submitting contents for every columns but one (e.g. the first one).
     //    - Summary of possible call flow:
     //      ----------------------------------------------------------------------------------------------------------
